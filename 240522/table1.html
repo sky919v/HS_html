@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- tr - (table row), 줄을 표현하는 태그
+     td - (table data), 칸을 표현하는 태그
+     border는 테이블 선 굵기 설정. 단위는 px(픽셀). 이때 테이블 태그 뿐만 아니라 td태그에도 테두리가 적용-->
+    
+    <!--cf)약어로 태그 생성방법
+      태그명>하위태그명>하위태그명
+      table>tr>td ->1줄 1칸 테이블 생성
+      table>tr>td*4 ->1줄 4칸 테이블 생성
+
+      p#para  -> p태그를 생성 하면서 p태그에 id="para"부여 -> <id="para"></p>
+      #은 아이디, .은 클래스
+      div.box -> <div class="box"></div>
+      div#-->
+     <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <!--table>tr*2>td*3{$}-->
+
+
+    
+     <table border="1">
+        <tr height="50">
+          <td width="100" align="center" colspan="2">1</td><!--colspan에 입력되는 숫자는 없어지는 칸 수-->
+          
+          <td width="50" rowspan="2">3</td><!--rowspan에 입력되는 숫자는 없어지는 칸 수-->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td width="200" height="100">5</td>
+           
+        </tr>
+    </table>
+  
+    <table border="1" cellspacing="0">
+      <tr height="50">
+        <td colspan="4"></td>
+        
+        <td></td> 
+      </tr>
+      <tr height="50">
+        <td></td>
+        <td colspan="4"></td>
+        
+        
+      </tr>
+      <tr height ="50">
+        <td></td>
+        <td colspan="3"></td>
+        <td width="50" rowspan="4"></td>
+        
+      </tr>
+      <tr height="50">
+        <td width="50" rowspan="3"></td>
+        <td></td>
+        <td colspan="2"></td>
+        
+        
+      </tr>
+      <tr height="50">
+        
+        <td colspan="3"></td>
+       
+        
+        
+      </tr>
+      <tr height="50">
+        
+        <td width="50"></td>
+        <td width="50"></td>
+        <td width="50"></td>
+        
+        
+      </tr>
+    
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <table border="1">
+        <thead>
+          <tr>
+            <th></th>
+            <th width="100">번호</th>
+            <th width="100">점수</th>
+            <th width="100">이름</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>컴공과</th>
+            <td>1</td>
+            <td>87</td>
+            <td>김유신</td>
+          </tr>
+          <tr>
+            <th>컴공과</th>
+            <td>1</td>
+            <td>87</td>
+            <td>김유신</td>
+          </tr>
+          <tr>
+            <th>정보통신학과</th>
+            <td>1</td>
+            <td>87</td>
+            <td>김유신</td>
+          </tr>
+        </tbody>
+    </table>
+</body>
+</html>
