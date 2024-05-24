@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 태그의 포지션</title>
+  <style>
+    *{
+      margin:0; padding:0; box-sizing:border-box;
+    }
+    ul{
+      list-style-type:none;
+    }
+
+    #wrap{
+      width:1000px;
+      margin:0 auto;
+      padding:20px 0;
+      border-bottom:2px solid #ccc;
+      position: relative;
+    }
+    .box{
+      width:100px;
+      padding:10px 0;
+    }
+    #box1{
+      position:relative;
+      left:15px;
+    }
+    #box2{
+      position:absolute;
+      top:20px;
+      right:15px;
+      color:red;
+      
+    }
+    #box3{
+      position:relative;
+      color:blue;
+      left:15px;
+
+    }
+    #nav{
+      width:1000px; margin:0 auto;
+      position:sticky;
+      top:50px;
+    }
+    #content{
+      height:3000px;
+    }
+    #sub{
+      position:fixed;
+      top:150px;
+      left:30px;
+    }
+    #box3>b:hover ~ #sub{
+      position:absolute;
+      top:0;
+      left:100px;
+      width:100px;
+      background-color:#ccc;
+      z-index:3;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="wrap">
+      <div id="box1" class="box">로그인</div>
+      <div id="box2" class="box">사이트맵</div>
+      <div id="box3" class="box">
+        <b>배달의민족</b>
+        <div id="sub">
+          <ul id="list">
+            <li>햄버거</li>
+            <li>치킨</li>
+            <li>피자</li>
+            <li>라면</li>
+            <li>국밥</li>
+          </ul>
+        </div></div>
+  </div>
+
+  <div id="nav">
+    <b>HOME</b>
+    <b>한식</b>
+    <b>일식</b>
+    <b>찜/탕</b>
+    <b>고기</b>
+  </div>
+
+  <div id="content"></div>
+
+  
+
+</body>
+</html>

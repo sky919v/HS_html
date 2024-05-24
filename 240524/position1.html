@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그의 포지션</title>
+  <style>
+  /* body{margin:0;} */
+  *{margin:0; padding:0; box-sizing:border-box;} /**은 해당 html 상의 모든 태그를 의미*/
+    #parent1{
+      margin-top: 100px;
+      margin-left:50px;
+      position:relative;
+      
+    }
+  
+    #box1{
+      width:300px; height:300px;
+      background-color:blue;
+    }
+    #box2{
+      width:300px; height:300px;
+      background-color:yellow;
+      position:relative;
+      left:300px;
+      
+    }
+    #box3{
+      width:300px; height:300px;
+      background-color:red;
+      position:relative;
+      left:600px;
+      top:px;
+      
+
+    }
+    #box4{
+      width:300px; height:300px;
+      background-color:orange;
+      position:absolute;
+      top:0;
+      left:600px;
+
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="parent1">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+  </div>
+
+</body>
+</html>
+
+<!-- position은 화면에서 태그 위치를 표현하기 위한 속성이다.
+     position에는 static, relative, absolute, fixed 등이 있다.
+    html의 태그에 별도로 position을 지정하지 않으면 static 상태이다.
+    static은 html 문서에 작성된 태드의 위치에 표시해 주는 상태이다.-->
